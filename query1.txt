@@ -1,0 +1,14 @@
+http://localhost/MusicSphere/MusicSphere.svc/registration?$filter=username eq 'username-here'&$select=password&$format=json
+
+if($dbpswd=$pswd)
+{
+$uid=$json->user->id;
+setcookie("userid",$uid);
+header('Location:homepage.php');
+}
+else
+{
+header('Location:login.php');
+}
+
+&\$format=".$format."";

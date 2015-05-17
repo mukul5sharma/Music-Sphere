@@ -1,0 +1,15 @@
+{
+    "d" : {
+        "results": [
+            {
+                "__metadata": {
+                    "uri": "http://localhost:80/MusicSphere/MusicSphere.svc/registration(id=1)", "type": "MusicSphere.registration"
+                }, "user": {
+                    "__deferred": {
+                        "uri": "registration(id=1)/user"
+                    }
+                }, "id": 1, "username": "hardik", "password": "qwerty", "securityques": "qwerty", "answer": "qwerty", "approved": false
+            }
+        ]
+    }
+}

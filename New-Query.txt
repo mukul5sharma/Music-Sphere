@@ -1,0 +1,12 @@
+$response2 = $proxy->user()
+		->Filter("id eq 1")
+		->Expand("favourites/song")
+		->Execute();
+
+foreach($response2->Result[0]->favourites as $fav1) 
+{ 
+	foreach($fav1->song as $song)
+	{
+		echo $song->title."</br>"; 
+	}
+}
